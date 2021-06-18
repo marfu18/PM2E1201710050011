@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E1201710050011.MainPage">
+
+    <StackLayout>
+
+        <Image Source="uth.png"
+               HeightRequest="80"
+               HorizontalOptions="Center"/>
+
+        <Button Text="Validar GPS" Clicked="Button_Clicked" Margin="30,0,30,0"/>
+
+        <Label Text="Latitud" Margin="10,24,0,0"/>
+        <Entry Text="" Keyboard="Numeric" x:Name="txtLatitud" FontSize="Medium"/>
+        <Label Text="Longitud" Margin="10,24,0,0"/>
+        <Entry Text="" Keyboard="Numeric" x:Name="txtLongitud" FontSize="Medium"/>
+
+        <Label Text="Describa ubicacion" Margin="10,24,10,0" FontSize="Medium"/>
+        <Entry Text="" x:Name="DesUbica"/>
+
+        <Label Text="Ubicacion" Margin="10,24,0,0" FontSize="Medium"/>
+        <Entry Text="" x:Name="NombreUbica"/>
+
+        <Button Text="Salvar Ubicacion" x:Name="btnSalvar" Clicked="btnSalvar_Clicked" Margin="30,0,30,0"/>
+        <Button Text="Ubicacion Salvada" x:Name="btnSalvadas" Clicked="btnSalvadas_Clicked" Margin="30,0,30,0"/>
+        
+
+    </StackLayout>
+
+</ContentPage>
